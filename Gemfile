@@ -18,7 +18,7 @@ gem 'oauth'
 gem 'httparty'
 
 gem 'shotgun'
-gem 'install httparty'
+
 
 group :test do
   gem 'database_cleaner', '~> 1.4.1'
