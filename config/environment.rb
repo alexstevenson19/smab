@@ -17,6 +17,11 @@ require 'logger'
 require 'bcrypt'
 require 'faker'
 
+require 'oauth'
+require 'json'
+require 'yelp'
+require 'httparty'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
