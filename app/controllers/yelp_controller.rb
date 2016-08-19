@@ -22,10 +22,10 @@ class YelpController
     puts ENV['MESSAGE_FROM_ELLIE']
 
     client = Yelp::Client.new({
-      consumer_key: 'aF1fD1DFV3TYXyQ9mtdnrw',
-      consumer_secret: 'MET1Fc81xxjlJY27vmU9tm8JtY4',
-      token: 'DOzEchAqt7bLMMvkQuTtOoehgsM2MGsh',
-      token_secret: 'vdM68MuhWC8lcQFNRXK8uF88c50'
+      consumer_key: '',
+      consumer_secret: '',
+      token: '',
+      token_secret: ''
       })
 
 

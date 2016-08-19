@@ -5,7 +5,7 @@ class ChiFoodInspect
 
     # params = { :aka_name => name }
 
-    client = SODA::Client.new({:domain => "data.cityofchicago.org", :app_token => "Zm0cvBwbcUh9jibrcj3U33Dwm"})
+    client = SODA::Client.new({:domain => "data.cityofchicago.org", :app_token => "add keys"})
 
     results = client.get("4ijn-s7e5", {:aka_name => name, :$limit => 5})
 

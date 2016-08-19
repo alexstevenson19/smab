@@ -1,8 +1,7 @@
 get '/yelp' do
   yp = YelpController.new
   @results = yp.find_matches(params[:name], params[:lat], params[:lon])
-  @first_result = #first result =|| "There's no yelp listing womp womp"
-  @rating = params[:rating]
+  # @chi_results = cfi.find_matches(params[:name])
   erb :"/reports/show"
 end
 
