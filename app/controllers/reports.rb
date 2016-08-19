@@ -6,6 +6,9 @@ get '/reports/:location/:name/?lat=c_lat&lon=c_lon&name=name&rating=rating' do
   erb :"/reports/show"
 end
 
-post '/reports' do
 
+get '/inspections/:name' do
+  cfi = ChiFoodInspect.new
+  @chi_results = cfi.find_matches(params[:name])
+  erb :"/inspections/show"
 end
