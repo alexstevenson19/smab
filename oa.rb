@@ -19,11 +19,11 @@ client = Yelp::Client.new({
 
 
 # puts ENV['MESSAGE_FROM_ELLIE']
-params = { term: "ROSATTI'S PIZZA",
+params = { term: "ROSATI'S PIZZA",
            # name: "5544 N MILWAUKEE AVE",
            limit: 10
          }
-coordinates = {latitude: 41.9825, longitude: -87.7742}
+coordinates = {latitude: 41.98258310472735, longitude: -87.77422708745797}
 results = client.search_by_coordinates(coordinates, params)
 # puts "\n\n\n\n#{x}"
 # results = client.search("Chicago", params)

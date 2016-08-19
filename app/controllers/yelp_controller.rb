@@ -1,5 +1,5 @@
 class YelpController
-  def find_matches(location, search_term, coordinates)
+  def find_matches(search_term, lat, lon)
     # client = Yelp::Client.new({ consumer_key: '',
     #                             consumer_secret: '',
     #                             token: '',
@@ -8,14 +8,14 @@ class YelpController
 
     params = { term: search_term,
                # name: "5544 N MILWAUKEE AVE",
-               limit: 20
+               limit: 5
              }
 
     #  params = { term: "Rosatti's Pizza",
     #             # name: "5544 N MILWAUKEE AVE",
     #             limit: 20
     #           }
-    # coordinates = {latitude: 41.9028, longitude: -87.6953}
+    coordinates = {latitude: lat, longitude: lon}
     # results = client.search_by_coordinates(coordinates, params)
     # puts "\n\n\n\n#{x}"
 
