@@ -2,7 +2,36 @@
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 2px dashed #0000cc;
+  /*border: 2px dashed #0000cc;*/
+}
+
+.tag-line {
+  /*color: red;*/
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.btn {
+  color:red;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.search {
+  color: gray;
+}
+
+.logo{
+  width:500px;
+  height:150px;
+  padding:0;
+  margin: 0 auto;
+  background-color: red;
+  /*margin-bottom:0;*/
+  background:url("/images/yick_white_back.jpg");
+  background-size:500px 150px;
 }
 
 nav {

@@ -1,5 +1,5 @@
 class YelpController
-  def find_matches(location, search_term)
+  def find_matches(location, search_term, coordinates)
     # client = Yelp::Client.new({ consumer_key: '',
     #                             consumer_secret: '',
     #                             token: '',
@@ -19,6 +19,8 @@ class YelpController
     # results = client.search_by_coordinates(coordinates, params)
     # puts "\n\n\n\n#{x}"
 
+    puts ENV['MESSAGE_FROM_ELLIE']
+
     client = Yelp::Client.new({
       consumer_key: 'aF1fD1DFV3TYXyQ9mtdnrw',
       consumer_secret: 'MET1Fc81xxjlJY27vmU9tm8JtY4',
@@ -27,7 +29,8 @@ class YelpController
       })
 
 
-    results = client.search(location.capitalize, params)
+    # results = client.search(location.capitalize, params)
+    results = client.search_by_coordinates(coordinates, params)
     puts results
 
     results.businesses.each do |business|
