@@ -12,6 +12,10 @@ gem 'activerecord'
 gem 'bcrypt'
 
 gem 'rake'
+gem 'yelp'
+gem 'json'
+gem 'oauth'
+gem 'httparty'
 
 gem 'shotgun'
 
