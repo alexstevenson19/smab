@@ -16,8 +16,9 @@ gem 'yelp'
 gem 'json'
 gem 'oauth'
 gem 'httparty'
-
+gem 'soda-ruby'
 gem 'shotgun'
+gem 'hashie'
 
 
 group :test do
